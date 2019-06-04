@@ -18,7 +18,6 @@ public class Main {
         prototypeTwo.setName("Mike");
         prototypeThree.setName("John");
 
-
         System.out.println(prototypeOne);
         System.out.println(prototypeTwo);
         System.out.println(prototypeThree);

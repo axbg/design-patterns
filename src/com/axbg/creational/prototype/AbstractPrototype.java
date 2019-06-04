@@ -1,9 +1,9 @@
 package com.axbg.creational.prototype;
 
-public class AbstractPrototype implements Cloneable {
+public abstract class AbstractPrototype implements Cloneable {
 
-    String name;
-    int age;
+    private String name = null;
+    private int age = 0;
 
     public String getName() {
         return name;
@@ -17,7 +17,7 @@ public class AbstractPrototype implements Cloneable {
         return age;
     }
 
-    public void setAge(int age) {
+    void setAge(int age) {
         this.age = age;
     }
 

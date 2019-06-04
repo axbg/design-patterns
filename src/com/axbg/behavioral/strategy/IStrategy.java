@@ -1,5 +1,7 @@
 package com.axbg.behavioral.strategy;
 
+import java.util.ArrayList;
+
 public interface IStrategy {
-    public void giveRaise(Employee[] employees, int number);
+    ArrayList<Employee> giveRaise(ArrayList<Employee> employees, int number);
 }

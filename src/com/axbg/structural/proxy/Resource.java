@@ -6,7 +6,7 @@ public class Resource implements CommonInterface {
 
     public Resource(String URL) {
         this.URL = URL;
-        System.out.println("Establishing handshake");
+        handshake();
     }
 
     public void handshake() {

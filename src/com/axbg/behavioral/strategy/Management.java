@@ -1,26 +1,34 @@
 package com.axbg.behavioral.strategy;
 
-public class Management {
+import java.util.ArrayList;
 
-    IStrategy strategy;
-    Employee[] employees;
+class Management {
 
-    public Management(IStrategy strategy, Employee[] employees) {
+    private IStrategy strategy;
+    private ArrayList<Employee> employees;
+
+    Management(IStrategy strategy) {
         this.strategy = strategy;
-        this.employees = employees;
+        this.employees = new ArrayList<>();
     }
 
-    public void setStrategy(IStrategy strategy) {
+    void setStrategy(IStrategy strategy) {
         this.strategy = strategy;
     }
 
-    public void printEmployees() {
-        for (int i = 0; i < employees.length; i++) {
-            System.out.println(employees[i].toString());
+    void addEmployee(Employee employee) {
+        employees.add(employee);
+    }
+
+    void printEmployees() {
+        for (Employee employee : employees) {
+            System.out.println(employee.toString());
         }
+
+        System.out.println();
     }
 
-    public void giveRaise(int number) {
-        strategy.giveRaise(employees, number);
+    void giveRaise(int number) {
+        employees = strategy.giveRaise(employees, number);
     }
 }

@@ -1,7 +1,7 @@
 package com.axbg.behavioral.observer;
 
-public class ConcreteObservable extends Observable {
-    public void generateEvent() {
+class ConcreteObservable extends Observable {
+    void generateEvent() {
         super.notifyObservers();
     }
 }

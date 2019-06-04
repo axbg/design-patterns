@@ -10,10 +10,13 @@ public class Main {
         firstUser.setAge(21);
         firstUser.setName("Alex");
 
-        System.out.println(firstUser);
-
         SingletonUser secondUser = SingletonUser.getInstance();
 
-        System.out.println(secondUser);
+        System.out.println(firstUser);
+
+        secondUser.setAge(23);
+        secondUser.setName("Carl");
+
+        System.out.println(firstUser);
     }
 }

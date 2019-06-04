@@ -1,8 +1,8 @@
 package com.axbg.creational.factory;
 
-public class Factory {
+class Factory {
 
-    public static AObject getType(EType type, String name) {
+    static AObject getType(EType type, String name) {
 
         AObject object = null;
 

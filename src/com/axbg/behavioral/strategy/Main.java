@@ -8,15 +8,19 @@ public class Main {
         IStrategy strategyHigh = new HighFirstStrategy();
         IStrategy strategyLow = new LowFirstStrategy();
 
-        Management management = new Management(strategyHigh, new Employee[]{new Employee(20),
-                new Employee(120), new Employee(150), new Employee(75), new Employee(10), new Employee(21),});
+        Management management = new Management(strategyHigh);
+
+        management.addEmployee(new Employee(20));
+        management.addEmployee(new Employee(120));
+        management.addEmployee(new Employee(35));
+        management.addEmployee(new Employee(71));
+        management.addEmployee(new Employee(210));
 
         management.giveRaise(50);
+        management.printEmployees();
 
         management.setStrategy(strategyLow);
-
-        System.out.println();
-
         management.giveRaise(50);
+        management.printEmployees();
     }
 }

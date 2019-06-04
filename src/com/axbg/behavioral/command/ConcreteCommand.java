@@ -2,9 +2,9 @@ package com.axbg.behavioral.command;
 
 public class ConcreteCommand extends ACommand {
 
-    Executant executant;
+    private Executant executant;
 
-    public ConcreteCommand(Executant executant) {
+    ConcreteCommand(Executant executant) {
         this.executant = executant;
     }
 

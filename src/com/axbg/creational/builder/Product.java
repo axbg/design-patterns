@@ -8,7 +8,7 @@ public class Product {
     private String description;
     private int volume;
 
-    public Product(ProductBuilder builder) {
+    Product(ProductBuilder builder) {
         this.name = builder.name;
         this.price = builder.price;
         this.description = builder.description;
@@ -25,7 +25,7 @@ public class Product {
                 '}';
     }
 
-    public static class ProductBuilder {
+    static class ProductBuilder {
 
         private String name;
         private int price;
@@ -33,22 +33,22 @@ public class Product {
         private String description;
         private int volume;
 
-        public ProductBuilder(String name, int price) {
+        ProductBuilder(String name, int price) {
             this.name = name;
             this.price = price;
         }
 
-        public ProductBuilder setDescription(String description) {
+        ProductBuilder setDescription(String description) {
             this.description = description;
             return this;
         }
 
-        public ProductBuilder setVolume(int volume) {
+        ProductBuilder setVolume(int volume) {
             this.volume = volume;
             return this;
         }
 
-        public Product build() {
+        Product build() {
             return new Product(this);
         }
     }

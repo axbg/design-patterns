@@ -1,6 +1,5 @@
 package com.axbg.creational.prototype;
 
-public class ConcretePrototype2 extends AbstractPrototype {
-
-
+class ConcretePrototype2 extends AbstractPrototype {
+    //additional attributes and methods can be added here
 }

@@ -7,7 +7,7 @@ public class ShopContext {
     IState state;
     ArrayList<Integer> commandId;
 
-    public ShopContext() {
+    ShopContext() {
         commandId = new ArrayList<>();
         this.state = new AvailableState();
     }
@@ -16,7 +16,7 @@ public class ShopContext {
         this.state = state;
     }
 
-    public void placeCommand(Integer id) {
+    void placeCommand(Integer id) {
         if (this.commandId.size() >= 3) {
             this.state = new UnavailableState();
         }
@@ -24,18 +24,19 @@ public class ShopContext {
         this.state.placeCommand(id, this);
     }
 
-    public void addCommand(Integer id) {
+    void addCommand(Integer id) {
         this.commandId.add(id);
     }
 
-    public void sendCommands() {
+    void sendCommands() {
         System.out.println("Delivering commands");
+
         for (Integer in : commandId) {
             System.out.println("Delivered: " + in);
         }
+
         commandId.clear();
         this.state = new AvailableState();
     }
-
 
 }

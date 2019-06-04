@@ -4,25 +4,25 @@ import java.util.ArrayList;
 
 public class Invoker {
 
-    ArrayList<ACommand> comenzi;
+    private ArrayList<ACommand> commands;
 
-    public Invoker() {
-        comenzi = new ArrayList<>();
+    Invoker() {
+        commands = new ArrayList<>();
     }
 
-    public void addCommands(ACommand command) {
-        this.comenzi.add(command);
+    void addCommands(ACommand command) {
+        this.commands.add(command);
     }
 
     public void removeCommands(ACommand command) {
-        this.comenzi.remove(command);
+        this.commands.remove(command);
     }
 
-    public void executeCommands() {
-        for (ACommand command : comenzi) {
+    void executeCommands() {
+        for (ACommand command : commands) {
             command.execute();
         }
 
-        comenzi.clear();
+        commands.clear();
     }
 }

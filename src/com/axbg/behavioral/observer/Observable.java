@@ -2,11 +2,11 @@ package com.axbg.behavioral.observer;
 
 import java.util.ArrayList;
 
-public abstract class Observable {
+abstract class Observable {
 
     ArrayList<Observer> observers;
 
-    public Observable() {
+    Observable() {
         this.observers = new ArrayList<>();
     }
 
@@ -19,8 +19,8 @@ public abstract class Observable {
     }
 
     void notifyObservers() {
-        for (int i = 0; i < observers.size(); i++) {
-            observers.get(i).notification();
+        for (Observer observer : observers) {
+            observer.notification();
         }
     }
 }

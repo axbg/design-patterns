@@ -10,7 +10,7 @@ public class SingletonUser {
         super();
     }
 
-    public static synchronized SingletonUser getInstance() {
+    static synchronized SingletonUser getInstance() {
 
         if (instance == null) {
             instance = new SingletonUser();
@@ -31,7 +31,7 @@ public class SingletonUser {
         return age;
     }
 
-    public void setAge(int age) {
+    void setAge(int age) {
         this.age = age;
     }
 

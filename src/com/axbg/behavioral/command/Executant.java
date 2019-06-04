@@ -1,14 +1,14 @@
 package com.axbg.behavioral.command;
 
-public class Executant {
+class Executant {
 
-    String name;
+    private String name;
 
-    public Executant(String name) {
+    Executant(String name) {
         this.name = name;
     }
 
-    public void executeCommand(ACommand command) {
+    void executeCommand(ACommand command) {
         System.out.println("Executing the command: " + name);
     }
 }
