@@ -42,4 +42,5 @@ public class SingletonUser {
                 ", age=" + age +
                 '}';
     }
+
 }

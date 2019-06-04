@@ -33,4 +33,5 @@ public abstract class AbstractPrototype implements Cloneable {
                 ", age=" + age +
                 '}';
     }
+
 }

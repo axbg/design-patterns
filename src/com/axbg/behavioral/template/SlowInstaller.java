@@ -1,6 +1,7 @@
 package com.axbg.behavioral.template;
 
 public class SlowInstaller extends ATemplate {
+
     @Override
     public void init() {
         System.out.println("Init slow installer");
@@ -20,4 +21,5 @@ public class SlowInstaller extends ATemplate {
     public void cleanUp() {
         System.out.println("Cleaning up slow installer");
     }
+
 }

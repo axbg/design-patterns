@@ -3,11 +3,11 @@ package com.axbg.structural.flyweight;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FlyweightFactory {
+class FlyweightFactory {
 
     private static Map<String, Flyweight> typesMap = new HashMap<>();
 
-    public static Flyweight getFlyweightType(String type) {
+    static Flyweight getFlyweightType(String type) {
         Flyweight tp = typesMap.get(type);
 
         if (tp == null) {
@@ -28,7 +28,7 @@ public class FlyweightFactory {
         return tp;
     }
 
-    public static int getLength() {
+    static int getLength() {
         return typesMap.size();
     }
 }

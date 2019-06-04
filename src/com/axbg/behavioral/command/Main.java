@@ -1,6 +1,7 @@
 package com.axbg.behavioral.command;
 
 public class Main {
+
     public static void main(String[] args) {
         System.out.println("Command pattern");
 
@@ -19,4 +20,5 @@ public class Main {
 
         invoker.executeCommands();
     }
+
 }

@@ -1,10 +1,11 @@
 package com.axbg.structural.proxy;
 
 public class Proxy implements CommonInterface {
-    Resource resource = null;
-    String URL;
 
-    public Proxy(String URL) {
+    private Resource resource = null;
+    private String URL;
+
+    Proxy(String URL) {
         this.URL = URL;
     }
 
@@ -16,4 +17,5 @@ public class Proxy implements CommonInterface {
 
         resource.connect();
     }
+
 }

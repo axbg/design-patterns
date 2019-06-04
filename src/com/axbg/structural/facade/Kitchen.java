@@ -1,16 +1,17 @@
 package com.axbg.structural.facade;
 
-public class Kitchen {
+class Kitchen {
 
-    boolean isDoorOpen = false;
+    private boolean isDoorOpen = false;
 
-    public void unlockDoor() {
+    void unlockDoor() {
         isDoorOpen = true;
         System.out.println("Unlocking the door");
     }
 
-    public void lockDoor() {
+    void lockDoor() {
         isDoorOpen = false;
         System.out.println("Locking the door");
     }
+
 }

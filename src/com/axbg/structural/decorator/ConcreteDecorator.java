@@ -1,8 +1,8 @@
 package com.axbg.structural.decorator;
 
-public class ConcreteDecorator extends ADecorator {
+class ConcreteDecorator extends ADecorator {
 
-    public ConcreteDecorator(AObject decoratedObject) {
+    ConcreteDecorator(AObject decoratedObject) {
         super(decoratedObject);
     }
 
@@ -10,4 +10,5 @@ public class ConcreteDecorator extends ADecorator {
     String printPrice() {
         return super.printPrice() + ", but there will be an additional cost of 20 dollars";
     }
+
 }

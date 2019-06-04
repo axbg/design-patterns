@@ -17,4 +17,5 @@ public abstract class AObject {
     }
 
     public abstract void printMyType();
+
 }

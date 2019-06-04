@@ -2,18 +2,19 @@ package com.axbg.structural.composite;
 
 import java.util.ArrayList;
 
-public class Structure extends ANod {
+public class Structure extends ANode {
 
-    private String denumire;
-    private ArrayList<ANod> nodes;
+    private String structureName;
+    private ArrayList<ANode> nodes;
 
-    Structure(String denumire) {
-        this.denumire = denumire;
+    Structure(String structureName) {
+        this.structureName = structureName;
         nodes = new ArrayList<>();
     }
 
     @Override
-    ANod getNod(int index) {
+    ANode getNode(int index) {
+
         if (index >= 0 && index < nodes.size()) {
             return nodes.get(index);
         }
@@ -22,22 +23,22 @@ public class Structure extends ANod {
     }
 
     @Override
-    void addNod(ANod nod) {
+    void addNode(ANode nod) {
         nodes.add(nod);
     }
 
     @Override
-    void removeNod(ANod nod) {
+    void removeNode(ANode nod) {
         nodes.remove(nod);
     }
 
     @Override
     void getInfo(String tab) {
-        System.out.println(tab + "\tStructura " + this.denumire);
-        System.out.println(tab + "\tCopii: ");
+        System.out.println(tab + "\tStructure " + this.structureName);
+        System.out.println(tab + "\tChildren: ");
 
-        for(ANod nod : nodes) {
-            nod.getInfo(tab + "\t");
+        for (ANode node : nodes) {
+            node.getInfo(tab + "\t");
         }
     }
 
@@ -62,4 +63,5 @@ public class Structure extends ANod {
     public void setLocation(String location) {
         throw new UnsupportedOperationException();
     }
+
 }

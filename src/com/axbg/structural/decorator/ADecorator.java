@@ -1,10 +1,10 @@
 package com.axbg.structural.decorator;
 
-public abstract class ADecorator extends AObject {
+abstract class ADecorator extends AObject {
 
-    AObject decoratedObject;
+    private AObject decoratedObject;
 
-    public ADecorator(AObject decoratedObject) {
+    ADecorator(AObject decoratedObject) {
         this.decoratedObject = decoratedObject;
     }
 
@@ -12,4 +12,5 @@ public abstract class ADecorator extends AObject {
     String printPrice() {
         return decoratedObject.printPrice();
     }
+
 }

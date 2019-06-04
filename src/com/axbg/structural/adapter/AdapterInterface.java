@@ -7,4 +7,5 @@ public class AdapterInterface extends NewImplementation implements ExistingInter
         System.out.println("Calling old method");
         print();
     }
+
 }

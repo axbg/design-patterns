@@ -12,4 +12,5 @@ public class ConcreteCommand extends ACommand {
     public void execute() {
         executant.executeCommand(this);
     }
+
 }

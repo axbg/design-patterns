@@ -1,12 +1,12 @@
 package com.axbg.structural.facade;
 
-public class Chef {
+class Chef {
 
-    public void prepareToCook() {
+    void prepareToCook() {
         System.out.println("Preparing to cook");
     }
 
-    public void goHome() {
+    void goHome() {
         System.out.println("Going home");
     }
 

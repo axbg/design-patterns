@@ -11,4 +11,5 @@ class Executant {
     void executeCommand(ACommand command) {
         System.out.println("Executing the command: " + name);
     }
+
 }

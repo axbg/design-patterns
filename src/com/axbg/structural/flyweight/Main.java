@@ -1,8 +1,8 @@
 package com.axbg.structural.flyweight;
 
 public class Main {
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
 
         Flyweight[] flyweights = new Flyweight[20];
         CustomProperty[] customs = new CustomProperty[20];
@@ -23,4 +23,5 @@ public class Main {
 
         System.out.println("Generated " + FlyweightFactory.getLength());
     }
+
 }

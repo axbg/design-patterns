@@ -10,4 +10,5 @@ public class ConcreteObject1 extends AObject {
     public void printMyType() {
         System.out.println("My type is 1");
     }
+
 }

@@ -2,14 +2,14 @@ package com.axbg.structural.proxy;
 
 public class Resource implements CommonInterface {
 
-    String URL;
+    private String URL;
 
-    public Resource(String URL) {
+    Resource(String URL) {
         this.URL = URL;
         handshake();
     }
 
-    public void handshake() {
+    private void handshake() {
         System.out.println("Establishing handshake");
     }
 
@@ -17,4 +17,5 @@ public class Resource implements CommonInterface {
     public void connect() {
         System.out.println("Establishing connection");
     }
+
 }

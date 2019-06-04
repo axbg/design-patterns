@@ -1,4 +1,4 @@
-package com.axbg.structural.chain;
+package com.axbg.behavioral.chainofresponsibility;
 
 public class Main {
     public static void main(String[] args) {

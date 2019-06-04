@@ -31,4 +31,5 @@ class Management {
     void giveRaise(int number) {
         employees = strategy.giveRaise(employees, number);
     }
+
 }

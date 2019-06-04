@@ -2,10 +2,10 @@ package com.axbg.structural.flyweight;
 
 public class CustomProperty {
 
-    int numberOfDoors;
-    String color;
+    private int numberOfDoors;
+    private String color;
 
-    public CustomProperty(int numberOfDoors, String color) {
+    CustomProperty(int numberOfDoors, String color) {
         this.numberOfDoors = numberOfDoors;
         this.color = color;
     }

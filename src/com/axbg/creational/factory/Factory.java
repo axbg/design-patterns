@@ -19,4 +19,5 @@ class Factory {
 
         return object;
     }
+
 }

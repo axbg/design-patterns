@@ -21,4 +21,5 @@ public class Main {
         old2.printDetail();
         nw2.print();
     }
+
 }

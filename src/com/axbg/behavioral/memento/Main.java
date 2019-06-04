@@ -1,4 +1,4 @@
-package com.axbg.structural.memento;
+package com.axbg.behavioral.memento;
 
 public class Main {
     public static void main(String[] args) {

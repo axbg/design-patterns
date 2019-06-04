@@ -8,7 +8,7 @@ public class Product {
     private String description;
     private int volume;
 
-    Product(ProductBuilder builder) {
+    private Product(ProductBuilder builder) {
         this.name = builder.name;
         this.price = builder.price;
         this.description = builder.description;
@@ -52,4 +52,5 @@ public class Product {
             return new Product(this);
         }
     }
+
 }

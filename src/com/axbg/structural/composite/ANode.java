@@ -1,16 +1,16 @@
 package com.axbg.structural.composite;
 
-public abstract class ANod {
+public abstract class ANode {
 
-    ANod getNod(int index) {
+    ANode getNode(int index) {
         throw new UnsupportedOperationException();
     }
 
-    void addNod(ANod nod) {
+    void addNode(ANode node) {
         throw new UnsupportedOperationException();
     }
 
-    void removeNod(ANod nod) {
+    void removeNode(ANode nod) {
         throw new UnsupportedOperationException();
     }
 
@@ -23,4 +23,5 @@ public abstract class ANod {
     public abstract String getLocation();
 
     public abstract void setLocation(String location);
+    
 }

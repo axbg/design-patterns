@@ -1,6 +1,7 @@
 package com.axbg.behavioral.strategy;
 
 public class Main {
+
     public static void main(String[] args) {
 
         System.out.println("Strategy pattern");
@@ -20,7 +21,8 @@ public class Main {
         management.printEmployees();
 
         management.setStrategy(strategyLow);
-        management.giveRaise(50);
+        management.giveRaise(40);
         management.printEmployees();
     }
+
 }

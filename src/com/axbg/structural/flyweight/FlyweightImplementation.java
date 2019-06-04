@@ -2,11 +2,11 @@ package com.axbg.structural.flyweight;
 
 public class FlyweightImplementation implements Flyweight {
 
-    String type;
-    int size;
-    int numberOfWheels;
+    private String type;
+    private int size;
+    private int numberOfWheels;
 
-    public FlyweightImplementation(String type, int size, int numberOfWheels) {
+    FlyweightImplementation(String type, int size, int numberOfWheels) {
         this.type = type;
         this.size = size;
         this.numberOfWheels = numberOfWheels;
@@ -25,4 +25,5 @@ public class FlyweightImplementation implements Flyweight {
     public void compose(CustomProperty customProperty) {
         System.out.println(this.toString() + customProperty.toString());
     }
+    
 }

@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class ShopContext {
 
-    IState state;
-    ArrayList<Integer> commandId;
+    private IState state;
+    private ArrayList<Integer> commandId;
 
     ShopContext() {
         commandId = new ArrayList<>();

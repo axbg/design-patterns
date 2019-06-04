@@ -1,6 +1,7 @@
 package com.axbg.structural.proxy;
 
 public class Main {
+
     public static void main(String[] args) {
 
         System.out.println("Proxy pattern");
@@ -11,4 +12,5 @@ public class Main {
 
         resource.connect();
     }
+
 }

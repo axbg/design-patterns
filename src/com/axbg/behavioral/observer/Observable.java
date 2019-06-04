@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 abstract class Observable {
 
-    ArrayList<Observer> observers;
+    private ArrayList<Observer> observers;
 
     Observable() {
         this.observers = new ArrayList<>();
@@ -23,4 +23,5 @@ abstract class Observable {
             observer.notification();
         }
     }
+
 }

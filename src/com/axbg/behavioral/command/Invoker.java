@@ -25,4 +25,5 @@ public class Invoker {
 
         commands.clear();
     }
+
 }

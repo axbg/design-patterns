@@ -16,4 +16,5 @@ public class FastInstaller extends ATemplate {
     public void cleanUp() {
         System.out.println("Cleaning up Fast installer");
     }
+
 }

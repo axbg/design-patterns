@@ -2,7 +2,7 @@ package com.axbg.behavioral.template;
 
 public abstract class ATemplate {
 
-    public void runCommands() {
+    void runCommands() {
         init();
         load();
         cleanUp();
@@ -11,4 +11,5 @@ public abstract class ATemplate {
     public abstract void init();
     public abstract void load();
     public abstract void cleanUp();
+
 }

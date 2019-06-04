@@ -2,9 +2,17 @@ package com.axbg.behavioral.strategy;
 
 public class Employee {
 
-    int salary;
+    private int salary;
 
     Employee(int salary) {
+        this.salary = salary;
+    }
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
         this.salary = salary;
     }
 
@@ -14,4 +22,5 @@ public class Employee {
                 "salary=" + salary +
                 '}';
     }
+
 }

@@ -7,9 +7,9 @@ public class HighFirstStrategy implements IStrategy {
 
     @Override
     public ArrayList<Employee> giveRaise(ArrayList<Employee> employees, int number) {
-        employees.stream().sorted(Comparator.comparing(employee -> employee.salary, Comparator.reverseOrder()))
+        employees.stream().sorted(Comparator.comparing(employee -> employee.getSalary(), Comparator.reverseOrder()))
                 .forEach(employee -> {
-                    if (employee.salary > number) employee.salary += 20;
+                    if (employee.getSalary() > number) employee.setSalary(employee.getSalary() + 20);
                 });
 
         return employees;

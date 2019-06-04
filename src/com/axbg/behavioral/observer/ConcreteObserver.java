@@ -6,4 +6,5 @@ public class ConcreteObserver implements Observer {
     public void notification() {
         System.out.println("Observer notified");
     }
+
 }

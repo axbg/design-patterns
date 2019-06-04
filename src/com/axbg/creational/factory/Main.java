@@ -1,6 +1,7 @@
 package com.axbg.creational.factory;
 
 public class Main {
+
     public static void main(String[] args) {
 
         System.out.println("Factory pattern");
@@ -11,4 +12,5 @@ public class Main {
         typeOne.printMyType();
         typeTwo.printMyType();
     }
+
 }

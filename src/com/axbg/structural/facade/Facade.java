@@ -1,22 +1,23 @@
 package com.axbg.structural.facade;
 
-public class Facade {
+class Facade {
 
-    Kitchen kitchen;
-    Chef chef;
+    private Kitchen kitchen;
+    private Chef chef;
 
-    public Facade() {
+    Facade() {
         kitchen = new Kitchen();
         chef = new Chef();
     }
 
-    public void openKitchen() {
+    void openKitchen() {
         kitchen.unlockDoor();
         chef.prepareToCook();
     }
 
-    public void closeKitchen() {
+    void closeKitchen() {
         kitchen.lockDoor();
         chef.goHome();
     }
+
 }
